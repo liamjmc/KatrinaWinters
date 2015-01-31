@@ -173,7 +173,7 @@ main {
 }
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/slide-3.JPG')}
+#slide-3 .bcg {background-image:url('../img/slide-3.JPG'); background-size:auto;}
 #slide-3 .hsContent {
 	margin-left: -239px;
 }
