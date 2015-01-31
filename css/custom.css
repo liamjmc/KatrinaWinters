@@ -1,0 +1,63 @@
+header{
+    background:#fff;
+    z-index:1000;
+}
+
+#title{
+    font-size: 31px; 
+    color:#000;
+    text-decoration:none;
+    margin-left:120px;
+}
+
+#main-menu{
+    font-size:20px;
+    float: right;
+    display: inline-flex;
+    height: 100%;
+    margin: 8px 120px 10px 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#main-menu a{
+    color:rgb(119, 119, 119);   
+    color:#000;
+    text-decoration:none;
+    margin-left:40px;
+}
+
+.anchor-effect a::before,
+.anchor-effect a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.anchor-effect a::before {
+	margin-right: 10px;
+	content: '-';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.anchor-effect a::after {
+	margin-left: 10px;
+	content: '-';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.anchor-effect a:hover::before,
+.anchor-effect a:hover::after,
+.anchor-effect a:focus::before,
+.anchor-effect a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
