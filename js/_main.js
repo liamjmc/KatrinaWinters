@@ -6,8 +6,8 @@
 	$body = $('body');
 	
     //FadeIn all sections   
-	$body.imagesLoaded( function() {
-		setTimeout(function() {
+	//$body.imagesLoaded( function() {
+		//setTimeout(function() {
 		      
 		      // Resize sections
 		      adjustWindow();
@@ -15,8 +15,8 @@
 		      // Fade in sections
 			  $body.removeClass('loading').addClass('loaded');
 			  
-		}, 800);
-	});
+		//}, 800);
+	//});
 	
 	function adjustWindow(){
 		
