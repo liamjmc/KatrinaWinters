@@ -1,6 +1,7 @@
 header{
-    background:#fff;
+    background: rgba(255, 255, 255, 0.7);
     z-index:1000;
+    border-bottom: 2px solid #fff;
 }
 
 #title{
