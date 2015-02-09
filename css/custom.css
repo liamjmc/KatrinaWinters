@@ -4,6 +4,10 @@ header{
     border-bottom: 2px solid #fff;
 }
 
+#logo{
+    height:40px;
+}
+
 #title{
     font-size: 31px; 
     color:#000;
@@ -16,7 +20,7 @@ header{
     float: right;
     display: inline-flex;
     height: 100%;
-    margin: 8px 120px 10px 10px;
+    margin: 11px 120px 10px 10px;
     list-style-type: none;
     font-size: 20px;
 }
