@@ -16,7 +16,7 @@ function setBackground() {
     if (st > innerHeight - 48)
     {
         $('header').removeClass("no-background").addClass("background");
-        $('#logo').attr('src', 'img/KW-black.PNG');
+        $('#logo').attr('src', 'img/KW-black.png');
     }
     else
     {
