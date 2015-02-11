@@ -1,7 +1,5 @@
 header{
-    background: rgba(255, 255, 255, 0.7);
     z-index:1000;
-    border-bottom: 2px solid #fff;
 }
 
 #logo{
@@ -10,9 +8,9 @@ header{
 
 #title{
     font-size: 31px; 
-    color:#000;
     text-decoration:none;
     margin-left:120px;
+    color:#fff;
 }
 
 #main-menu{
@@ -26,8 +24,7 @@ header{
 }
 
 #main-menu a{
-    color:rgb(119, 119, 119);   
-    color:#000;
+    color:#fff;
     text-decoration:none;
     margin-left:40px;
 }

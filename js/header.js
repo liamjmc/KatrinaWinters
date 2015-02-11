@@ -3,10 +3,21 @@ var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
+var windowHeight = window.innerHeight;
 
 $(window).scroll(function(event){
     didScroll = true;
+    setBackground();
 });
+
+function setBackground() {
+    var st = $(this).scrollTop();
+    
+    if (st > innerHeight - 48)
+        $('header').removeClass("no-background").addClass("background");
+    else
+        $('header').removeClass("background").addClass("no-background");
+}
 
 setInterval(function() {
     if (didScroll) {
