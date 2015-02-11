@@ -7,13 +7,22 @@ header {
 }
 
 header.background{
-    background: rgb(199, 92, 92);
-    border-bottom: 8px solid rgb(199, 92, 92);
+    background: rgb(255, 255, 255);
+    border-bottom: 8px solid rgb(255, 255, 255);
     color:#000 !important;
+}
+
+header.background #main-menu a span{
+    color:#000;
 }
 
 header.no-background{
      background: transparent;
+     color:#fff !important;
+}
+
+header.no-background #main-menu a span{
+        color:#fff;
 }
 
 .nav-up {

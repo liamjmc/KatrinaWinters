@@ -14,9 +14,15 @@ function setBackground() {
     var st = $(this).scrollTop();
     
     if (st > innerHeight - 48)
+    {
         $('header').removeClass("no-background").addClass("background");
+        $('#logo').attr('src', 'img/KW-black.PNG');
+    }
     else
+    {
         $('header').removeClass("background").addClass("no-background");
+        $('#logo').attr('src', 'img/KW.PNG');
+    }
 }
 
 setInterval(function() {
