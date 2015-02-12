@@ -12,7 +12,7 @@ header.background{
     color:#000 !important;
 }
 
-header.background #main-menu li a{
+header.background #main-menu li a, header.background a#title{
     color:#000;
 }
 
@@ -21,7 +21,7 @@ header.no-background{
      color:#fff !important;
 }
 
-header.no-background #main-menu li a{
+header.no-background #main-menu li a, header.background a#title{
         color:#fff;
 }
 
