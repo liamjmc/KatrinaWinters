@@ -21,7 +21,7 @@ header.no-background{
      color:#fff !important;
 }
 
-header.no-background #main-menu li a, header.background a#title{
+header.no-background #main-menu li a, header.no-background a#title{
         color:#fff;
 }
 
