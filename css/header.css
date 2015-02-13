@@ -12,7 +12,7 @@ header.background{
     color:#000 !important;
 }
 
-header.background #main-menu a span{
+header.background #main-menu span{
     color:#000;
 }
 
@@ -21,7 +21,7 @@ header.no-background{
      color:#fff !important;
 }
 
-header.no-background #main-menu a span{
+header.no-background #main-menu span{
         color:#fff;
 }
 

@@ -53,3 +53,13 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+function openModal(link){
+    var modalId = "#" + link.id + "-modal";
+    $(modalId).show("slow");
+}
+
+function closeModal(link){
+    var modalId = "#" + link.dataset.modal;
+    $(modalId).hide("slow");
+}

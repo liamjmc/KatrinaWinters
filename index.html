@@ -34,13 +34,13 @@
         <![endif]-->
        	
         <header class="nav-down anchor-effect no-background">
-            <a href="index.html" id="title"><img src="img/KW.PNG" id="logo"></a>
+            <a href="index.html" id="title"><span><img src="img/KW.PNG" id="logo" class="logo-image"></span></a>
             
             <ul id="main-menu" class="cl-effect-1">
-                <li><a href="index.html"><span data-hover="Contact">Contact</a></span></li>
-                <li><a href="index.html"><span data-hover="Video">Video</a></span></li>
-                <li><a href="index.html"><span data-hover="Gallery">Gallery</a></span></li>
-                <li><a href="index.html"><span data-hover="CV">CV</a></span></li>
+                <li><span id="contact-link" onclick="openModal(this)" data-hover="Contact">Contact</span></li>
+                <li><span id="video-link" onclick="openModal(this)" data-hover="Video">Video</span></li>
+                <li><span id="gallery-link" onclick="openModal(this)" data-hover="Gallery">Gallery</span></li>
+                <li><span id="cv-link" onclick="openModal(this)" data-hover="CV">CV</span></li>
             </ul>
         </header>
         
@@ -49,6 +49,42 @@
 	       	<img src="img/slide-2.JPG">
 	       	<img src="img/slide-3.JPG">
 	       	<img src="img/slide-4.JPG">
+       	</div>
+       	
+       	<div id="contact-link-modal" class="modal">
+       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
+            <span id="close" data-modal="contact-link-modal" onclick="closeModal(this)">X</span>
+       	    <div class="modal-text">
+       	        <div class="modal-title">Contact</div>
+       	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+       	    </div>
+       	</div>
+       	
+       	<div id="video-link-modal" class="modal">
+       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
+            <span id="close" data-modal="video-link-modal" onclick="closeModal(this)">X</span>
+       	    <div class="modal-text">
+       	        <div class="modal-title">Video</div>
+       	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+       	    </div>
+       	</div>
+       	
+       	<div id="gallery-link-modal" class="modal">
+       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
+            <span id="close" data-modal="gallery-link-modal" onclick="closeModal(this)">X</span>
+       	    <div class="modal-text">
+       	        <div class="modal-title">Gallery</div>
+       	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+       	    </div>
+       	</div>
+       	
+       	<div id="cv-link-modal" class="modal">
+       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
+            <span id="close" data-modal="cv-link-modal" onclick="closeModal(this)">X</span>
+       	    <div class="modal-text">
+       	        <div class="modal-title">CV</div>
+       	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+       	    </div>
        	</div>
        	
        	<main>
