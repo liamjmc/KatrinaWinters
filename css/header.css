@@ -21,7 +21,7 @@ header.no-background{
      color:#fff !important;
 }
 
-header.no-background #main-menu span, .background #title{
+header.no-background #main-menu span, .no-background #title{
         color:#fff;
 }
 

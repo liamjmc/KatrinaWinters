@@ -116,9 +116,24 @@ header{
     margin-top: 10px;
 }
 
-/*Stripy title*/
+.loading header{
+     display:none;   
+}
 
-.box-with-text {
+.loaded header{
+     display: block;   
+}
+
+.loading .loading-name{
+     display: block;
+}
+
+.loaded .loading-name{
+     display: none;   
+}
+
+.loading-name {
+    background-image: -webkit-linear-gradient(crimson 50%, black 50%); 
   background-repeat: repeat;
   background-position: 0 0;
   background-size: 100% 50px;
@@ -126,15 +141,13 @@ header{
   -webkit-background-clip: text;
   -webkit-animation: stripes 2s linear infinite;
   animation: stripes 2s linear infinite;
+  position:absolute;
+  top:50%;
+  width:100%;
+    font-size:100px;
+    text-align: center;
 }
 
-.background .box-with-text{
-   background-image: -webkit-linear-gradient(crimson 50%, white 50%); 
-}
-
-.no-background .box-with-text{
-    background-image: -webkit-linear-gradient(crimson 50%, black 50%);
-}
 
 @-webkit-keyframes stripes {
   100% {
