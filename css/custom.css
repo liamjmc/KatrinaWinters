@@ -184,7 +184,7 @@ text-decoration: none;
 }
 
 #loading-name {
-background-image: -webkit-linear-gradient(white 50%, crimson 50%);
+background-image: -webkit-linear-gradient(white 50%, black 50%);
 background-repeat: repeat;
 background-position: 0 0;
 background-size: 50px 50px;
