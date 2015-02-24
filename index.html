@@ -109,7 +109,7 @@
        	
        	<main>
        	 
-       	 <div id="scroll-wrapper"><a data-scroll data-options='{ "easing": "easeInQuad" }' id="scroll-v" href="#smooth-scroll">V</a></div>
+       	 <div id="scroll-wrapper"><a data-scroll id="scroll-v" href="#smooth-scroll">V</a></div>
        	 
 	        <section id="slide-1" class="homeSlide">
 	        	<div class="bcg">
@@ -170,11 +170,9 @@
             //$("#loading-name").bigtext();
             smoothScroll.init({
 				speed: 1000,
-				easing: 'easeInOutCubic',
+				easing: 'easeInQuint',
 				offset: 0,
 				updateURL: false,
-				callbackBefore: function ( toggle, anchor ) {},
-				callbackAfter: function ( toggle, anchor ) {}
 			});
         </script>
         
