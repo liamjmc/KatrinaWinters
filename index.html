@@ -109,6 +109,8 @@
        	
        	<main>
        	 
+       	 <div id="scroll-wrapper"><a data-scroll data-options='{ "easing": "easeInQuad" }' id="scroll-v" href="#smooth-scroll">V</a></div>
+       	 
 	        <section id="slide-1" class="homeSlide">
 	        	<div class="bcg">
 		        	<div class="hsContainer">
@@ -121,7 +123,7 @@
 		    
 		    <section id="slide-2" class="homeSlide">
 		    	<div class="bcg">
-			    	<div class="hsContainer">
+			    	<div id="smooth-scroll" class="hsContainer">
 			    		<div class="hsContent">
 				    		<h2>We can put whatever content you want in these little slides</h2>
 			    		</div>
@@ -162,10 +164,19 @@
         <script src="js/skrollr.js"></script>
         <script src="js/main.js"></script>
         <script src="js/header.js"></script>
-        <!--<script src="js/bigtext.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <!--<script src="js/bigtext.js"></script>-->
         <script>
-            $("#loading-name").bigtext();
-        </script>-->
+            //$("#loading-name").bigtext();
+            smoothScroll.init({
+				speed: 1000,
+				easing: 'easeInOutCubic',
+				offset: 0,
+				updateURL: false,
+				callbackBefore: function ( toggle, anchor ) {},
+				callbackAfter: function ( toggle, anchor ) {}
+			});
+        </script>
         
     </body>
 </html>
