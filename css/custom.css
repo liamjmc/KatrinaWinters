@@ -16,6 +16,7 @@ header{
     margin-left:120px;
     color:#fff;
     float: left;
+    cursor: pointer;
 }
 
 #main-menu{
