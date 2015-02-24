@@ -9,7 +9,7 @@
         <title>Katrina Winters</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
+        <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
 		<link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -43,6 +43,8 @@
                 <li><span id="video-link" onclick="openModal(this)" data-hover="Video">Video</span></li>
                 <li><span id="gallery-link" onclick="openModal(this)" data-hover="Gallery">Gallery</span></li>
                 <li><span id="cv-link" onclick="openModal(this)" data-hover="CV">CV</span></li>
+                
+                <li><span id="close-modal" data-modal="contact-link-modal" onclick="closeModal()">X</span></li>
             </ul>
         </header>
         
@@ -53,36 +55,38 @@
 	       	<img src="img/slide-4.JPG">
        	</div>
        	
-       	<div id="contact-link-modal" class="modal">
-       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
-            <span id="close" data-modal="contact-link-modal" onclick="closeModal(this)">X</span>
+       	<div class="contact-link-modal modal">
+       	    <!--<img src="img/KW.PNG" id="modal-logo" class="logo-image">-->
+            
        	    <div class="modal-text">
        	        <div class="modal-title">Contact</div>
        	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
        	    </div>
        	</div>
        	
-       	<div id="video-link-modal" class="modal">
-       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
-            <span id="close" data-modal="video-link-modal" onclick="closeModal(this)">X</span>
+       	<div class="video-link-modal modal">
+       	    <!--<img src="img/KW.PNG" id="modal-logo" class="logo-image">-->
+            
        	    <div class="modal-text">
        	        <div class="modal-title">Video</div>
-       	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+       	        <div class="modal-text-body">
+       	            <!--<iframe class="ytplayer" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com" frameborder="0"/>-->
+       	        </div>
        	    </div>
        	</div>
        	
-       	<div id="gallery-link-modal" class="modal">
-       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
-            <span id="close" data-modal="gallery-link-modal" onclick="closeModal(this)">X</span>
+       	<div class="gallery-link-modal modal">
+       	    <!--<img src="img/KW.PNG" id="modal-logo" class="logo-image">-->
+            
        	    <div class="modal-text">
        	        <div class="modal-title">Gallery</div>
        	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
        	    </div>
        	</div>
        	
-       	<div id="cv-link-modal" class="modal">
-       	    <img src="img/KW.PNG" id="modal-logo" class="logo-image">
-            <span id="close" data-modal="cv-link-modal" onclick="closeModal(this)">X</span>
+       	<div class="cv-link-modal modal">
+       	    <!--<img src="img/KW.PNG" id="modal-logo" class="logo-image">-->
+            
        	    <div class="modal-text">
        	        <div class="modal-title">CV</div>
        	        <div class="modal-text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
@@ -134,7 +138,11 @@
 			</section>
 		    
 		</main>
-
+        
+        <footer>
+            <span class="address">www.KatrinaWinters.com</span>
+        </footer>
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/imagesloaded.js"></script>

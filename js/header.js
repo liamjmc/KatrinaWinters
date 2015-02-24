@@ -55,11 +55,14 @@ function hasScrolled() {
 }
 
 function openModal(link){
-    var modalId = "#" + link.id + "-modal";
-    $(modalId).show("slow");
+    var modalId = "." + link.id + "-modal";
+    
+    $(".open-modal").hide("slow");
+    $(modalId).show("slow").addClass("open-modal");
+    $("#close-modal").show("slow");
 }
 
-function closeModal(link){
-    var modalId = "#" + link.dataset.modal;
-    $(modalId).hide("slow");
+function closeModal(){
+    $(".open-modal").hide("slow").removeClass("open-modal");
+    $("#close-modal").hide("slow");
 }

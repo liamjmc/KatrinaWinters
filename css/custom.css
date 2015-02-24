@@ -76,19 +76,14 @@ header{
     top: 0;
     left: 0;
     display: none;
-    z-index: 9999;
+    z-index: 1;
     width: 100vw;
     height: 100vh;
-    background: #777;
+    background: rgba(0,0,0,0.7);
 }
 
-.modal #close {
-    color: #fff;
-    font-size: 40px;
-    position: absolute;
-    right: 5%;
-    top: 4%;
-    cursor:pointer;
+#close-modal {
+ display:none;
 }
 
 .modal #modal-logo{
@@ -102,18 +97,19 @@ header{
     height: 100%;
     padding: 10%;
     box-sizing: border-box;
+    color: #fff;
 }
 
 .modal .modal-title {
     width: 100%;
     text-align: center;
-    color: #222;
     font-size: 40px;
 }
 
 .modal .modal-text-body {
     font-size: 18px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .loading header{
@@ -133,19 +129,20 @@ header{
 }
 
 .loading-name {
-    background-image: -webkit-linear-gradient(crimson 50%, black 50%); 
-  background-repeat: repeat;
-  background-position: 0 0;
-  background-size: 100% 50px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-animation: stripes 2s linear infinite;
-  animation: stripes 2s linear infinite;
-  position:absolute;
-  top:50%;
-  width:100%;
-    font-size:100px;
-    text-align: center;
+background-image: -webkit-linear-gradient(white 50%, black 50%);
+background-repeat: repeat;
+background-position: 0 0;
+background-size: 50px 50px;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-animation: stripes 2s linear infinite;
+animation: stripes 2s linear infinite;
+position: absolute;
+top: 50%;
+width: 100%;
+font-size: 100px;
+text-align: center;
+font-family: 'Sacramento', cursive;
 }
 
 
@@ -180,3 +177,22 @@ body {
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }*/
+
+footer {
+position: fixed;
+bottom: 0;
+background: #fff;
+color: #000;
+width: 100%;
+height: 12vh;
+text-align: center;
+z-index: -1;
+font-size: 12vh;
+    box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.9);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.9);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.9);
+}
+
+main {
+margin-bottom: 10vh;
+}
