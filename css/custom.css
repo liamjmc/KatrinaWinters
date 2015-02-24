@@ -13,7 +13,6 @@ header{
 #title{
     font-size: 31px; 
     text-decoration:none;
-    margin-left:120px;
     color:#fff;
     float: left;
     cursor: pointer;
@@ -24,7 +23,7 @@ header{
     float: right;
     display: inline-flex;
     height: 100%;
-    margin: 11px 120px 10px 10px;
+    margin: 11px 0 10px 10px;
     list-style-type: none;
     font-size: 20px;
     cursor:pointer;
