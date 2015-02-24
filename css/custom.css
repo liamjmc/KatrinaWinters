@@ -122,15 +122,15 @@ header{
      display: block;   
 }
 
-.loading .loading-name{
+.loading #loading-name{
      display: block;
 }
 
-.loaded .loading-name{
+.loaded #loading-name{
      display: none;   
 }
 
-.loading-name {
+#loading-name {
 background-image: -webkit-linear-gradient(white 50%, black 50%);
 background-repeat: repeat;
 background-position: 0 0;
@@ -142,7 +142,8 @@ animation: stripes 2s linear infinite;
 position: absolute;
 top: 50%;
 width: 100%;
-font-size: 100px;
+height:33%;
+font-size: 15vw;
 text-align: center;
 font-family: 'Sacramento', cursive;
 }
