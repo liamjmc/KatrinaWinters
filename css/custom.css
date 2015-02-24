@@ -198,6 +198,9 @@ height:33%;
 font-size: 15vw;
 text-align: center;
 font-family: 'Sacramento', cursive;
+-ms-transform: rotate(7deg);
+-webkit-transform: rotate(7deg);
+transform:translateY(-50%);
 }
 
 
