@@ -35,17 +35,12 @@ setInterval(function() {
 function hasScrolled() {
     var st = $(this).scrollTop();
     
-    // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
     
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > windowHeight * 1.5){
-        // Scroll Down
         $('header').removeClass('nav-down').addClass('nav-up');
     } else {
-        // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('header').removeClass('nav-up').addClass('nav-down');
         }
@@ -57,7 +52,7 @@ function hasScrolled() {
 function openModal(link){
     var modalId = "." + link.id + "-modal";
     
-    $(".open-modal").hide("slow");
+    $(".open-modal").hide("slow").removeClass("open-modal");
     $(modalId).show("slow").addClass("open-modal");
     $("#close-modal").show("slow");
 }
