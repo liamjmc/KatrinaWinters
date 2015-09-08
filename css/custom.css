@@ -167,6 +167,11 @@ text-decoration: none;
     text-align: center;
 }
 
+.contact-link-modal a{
+    text-decoration: none;
+    color: white;   
+}
+
 .loading header{
      display:none;   
 }
@@ -184,7 +189,7 @@ text-decoration: none;
 }
 
 #loading-name {
-background-image: -webkit-linear-gradient(white 50%, black 50%);
+background-image: -webkit-linear-gradient(white 50%, #BD2842 50%);
 background-repeat: repeat;
 background-position: 0 0;
 background-size: 50px 50px;

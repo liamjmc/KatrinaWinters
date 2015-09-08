@@ -52,12 +52,12 @@ function hasScrolled() {
 function openModal(link){
     var modalId = "." + link.id + "-modal";
     
-    $(".open-modal").hide("slow").removeClass("open-modal");
-    $(modalId).show("slow").addClass("open-modal");
+    $(".open-modal").fadeOut("slow").removeClass("open-modal");
+    $(modalId).fadeIn("slow").addClass("open-modal");
     $("#close-modal").show("slow");
 }
 
 function closeModal(){
-    $(".open-modal").hide("slow").removeClass("open-modal");
+    $(".open-modal").fadeOut("slow").removeClass("open-modal");
     $("#close-modal").hide("slow");
 }
