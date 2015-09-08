@@ -242,20 +242,6 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }*/
 
-footer {
-position: fixed;
-bottom: 0;
-background: #fff;
-color: #000;
-width: 100%;
-height: 12vh;
-text-align: center;
-z-index: -1;
-font-size: 12vh;
-    box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.9);
-    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.9);
-    -moz-box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.9);
-}
 
 main {
 margin-bottom: 10vh;
