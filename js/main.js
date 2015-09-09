@@ -2,7 +2,8 @@
 	
 	// Setup variables
 	$window = $(window);
-	$slide = $('.homeSlide');
+	$homeSlide = $('.homeSlide');
+    $halfSlide = $('.halfSlide');
 	$body = $('body');
 	
     //FadeIn all sections   
@@ -32,8 +33,9 @@
 		} 
 	    
 	    // Resize our slides
-	    $slide.height(winH);
-	    
+	    $homeSlide.height(winH);
+	    $halfSlide.height(winH / 2);
+        
 	    // Refresh Skrollr after resizing our sections
 	    
 	    

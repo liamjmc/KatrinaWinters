@@ -242,8 +242,6 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }*/
 
-@media (max-width: 780px) {
-     #main-menu{
-          display:block;
-     }
+.menu{
+    display:none;
 }
