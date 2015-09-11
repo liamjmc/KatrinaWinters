@@ -164,7 +164,7 @@ main {
 	}
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/slide-1.JPG');background-size:contain;}
+#slide-1 .bcg {background-image:url('../img/slide-1.JPG');}
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;
