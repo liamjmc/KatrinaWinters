@@ -1,0 +1,24 @@
+#cv-main{
+    width:100%;
+}
+
+header, .cv-content, footer{
+    text-align: center;
+}
+
+header#header{
+    padding-left:0;
+    padding-right:0;
+}
+
+.cv-icon{
+    color:#00D3B7;
+}
+
+html{
+    overflow:auto !important;
+}
+
+h2{
+    margin-top:20px;
+}
