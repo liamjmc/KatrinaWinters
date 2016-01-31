@@ -16,24 +16,64 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+        
+        <link rel="stylesheet" href="assets/css/stylish-portfolio.css">
+        
+        <link rel="stylesheet" href="assets/css/home.css">
+        
+         
+        
+        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	</head>
 	<body class="is-loading-0 is-loading-1 is-loading-2">
 
+    
 		<!-- Main -->
 			<div id="main">
 
+                <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right main-toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="index.html"  class="name" onclick = $("#menu-close").click(); >Katrina Winters</a>
+            </li>
+            <li>
+                <a href="index.html" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="index.html/#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="index.html/#services" onclick = $("#menu-close").click(); >Talents</a>
+            </li>
+            <li>
+                <a href="" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="index.html/#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+            <li>
+                <a href="showreel.html" onclick = $("#menu-close").click(); >Showreel</a>
+            </li>
+        </ul>
+    </nav>
+                
 				<!-- Header -->
 					<header id="header">
-						<h1><img src="images/KW-black.png"/></h1>
-						<p>Katrina Winters <br>Actor, dancer, singer and model :)</p>
-						<ul class="icons">
+                                    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg main-toggle"><i class="fa fa-bars"></i></a>
+    
+						<h1>Portfolio</h1>
+						<!--<ul class="icons">
 							<li><a href="https://www.facebook.com/KatrinaCWinters/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="https://www.instagram.com/katmeowevans/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="cv.html" class="icon fa-file-text"><span class="label">CV</span></a></li>
 							<li><a href="mailto:katrinawinters@hotmail.co.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
                             <li><a href="#" class="icon gallery-icon fa-camera"><span class="label">Email</span></a></li>
-						</ul>
+						</ul>-->
 					</header>
 
 				<!-- Thumbnail -->
@@ -166,7 +206,36 @@
                 
         }, 1000);
     })
-</script>
+    
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
 
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+       
 	</body>
 </html>

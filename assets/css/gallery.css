@@ -1,3 +1,43 @@
+@font-face {
+    font-family: AbrilFatface;
+    src: url(../../assets/fonts/abril-fatface/AbrilFatface.otf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../../assets/fonts/playfair-display/PlayfairDisplay-Regular.otf);
+}
+
 .gallery-icon{
     color:#00D3B7;
+}
+
+body #main{
+    background:#222;
+}
+
+body *{
+    font-family: PlayfairDisplay,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#fff;
+}
+
+#menu-close i{
+    color:#333;
+}
+
+body .main-toggle{
+    margin:0;
+}
+
+body #menu-toggle{
+    background: #222;
+    right: 17px;
+}
+
+body header h1{
+    font-family: AbrilFatface,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body #sidebar-wrapper.active{
+    right:267px;
 }

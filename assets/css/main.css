@@ -124,16 +124,6 @@
 		color: #aaa;
 	}
 
-	a {
-		-moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		-webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		-ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		border-bottom: dotted 1px;
-		color: inherit;
-		text-decoration: none;
-	}
-
 		a:hover {
 			border-bottom-color: transparent;
 			color: #00D3B7;
