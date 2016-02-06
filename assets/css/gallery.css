@@ -41,3 +41,22 @@ body header h1{
 body #sidebar-wrapper.active{
     right:267px;
 }
+
+a.thumbnail {
+    position: relative; 
+    height: 100px;
+    overflow:hidden;
+}
+
+a.thumbnail img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
