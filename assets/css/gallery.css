@@ -46,6 +46,7 @@ a.thumbnail {
     position: relative; 
     height: 100px;
     overflow:hidden;
+    margin-bottom: 0;
 }
 
 a.thumbnail img {
@@ -53,10 +54,13 @@ a.thumbnail img {
   top: 0; 
   left: 0; 
   right: 0; 
-  bottom: 0; 
   margin: auto; 
   min-width: 50%;
-  min-height: 50%;
+  min-height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+#viewer{
+    background:#222;
 }
