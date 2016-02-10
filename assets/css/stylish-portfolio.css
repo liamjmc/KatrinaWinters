@@ -166,11 +166,6 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../../images/fulls/07.jpg) #000 no-repeat center center scroll;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
 }
 
 /* About */

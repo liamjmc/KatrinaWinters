@@ -1,111 +1,322 @@
-<!DOCTYPE HTML>
-<!--
-	Lens by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Katrina Winters</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/cv.css" />
+<!DOCTYPE html>
+<html lang="en">
 
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-	</head>
-	<body>
+<head>
 
-		<!-- Main -->
-			<div id="cv-main">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-				<!-- Header -->
-					<header id="header">
-						<img src="images/KW-black.png"/>
-						<p>Katrina Winters <br>Actor, dancer, singer and model :)</p>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/KatrinaCWinters/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/katmeowevans/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="cv.html" class="cv-icon icon fa-file-text"><span class="label">CV</span></a></li>
-							<li><a href="mailto:katrinawinters@hotmail.co.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                            <li><a href="gallery.html" class="icon fa-camera"><span class="label">Email</span></a></li>
-						</ul>
-					</header>					
+    <title>Katrina Winters</title>
 
-                <!-- CV -->
-                    <div class="cv-content">
-       	                <div class="text-body">
-                            <div>
-                                katrinacwinters@hotmail.co.uk <br> 07534963894 <br> Spotlight: 6811-9081-6092 <br> <b>Agent </b> VS Casting
-        
-        
-            <div><b>Height </b> 5’5” <b>Eye colour </b> Blue/Green <b>Hair colour </b> Brunette <b>Build </b>Petite</div>
-        
-        <h2>Training</h2>
-       The Fame Academy HNC in Musical Theatre 2011<br>
-       The MGA Academy of Performing Arts Vocational year 2012-13<br>
-        
-        <h2>Professional experience</h2>
-        <div>
-                        <b>Dream Worldwide Productions</b>
-                        Solo Cabaret Artist June 2015-Sept 2015<br>
-                        <b>Do You Believe</b>
-                        Company/Understudy Cinders WUAS ‘15<br>
-                        <b>Wish Upon A Star Entertainment</b>
-                        Princess Actor 2014/2015<br>
-                        <b>I Survive a Zombie Apocalypse</b>
-                        Zombie Nurse (Feat.) Tiger Aspect/BBC 2014<br>
-                        <b>Outlander</b>
-                        Supporting Artist; Starz 2014<br>
-                        <b>Aladdin Tour (UK)</b>
-                        Principle roles; tech; M&M Productions 2013/14      
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/stylish-portfolio.css" rel="stylesheet">
+
+    <link href="assets/css/home.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <link href="assets/css/animate.css" rel="stylesheet">
+    
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg main-toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  class="name" onclick = $("#menu-close").click(); >Katrina Winters</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Talents</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+            <li>
+                <a href="showreel.html" onclick = $("#menu-close").click(); >Showreel</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <img class="logo" src="images/KW-black.png"/>
+    
+    <!-- Header -->
+    <header id="top" class="header cv-header">
+        <div class="text-vertical-center">
+            <h1 class="name wow fadeIn" data-wow-delay="0.5s">CV</h1>
+            <h3 class="wow fadeIn" data-wow-delay="1s">5’5” Blue/Green eyes, Brunette, Petite</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg wow fadeIn" data-wow-delay="1.5s">Find Out More</a>
         </div>
-                                
-        <h2>Performance experience</h2>
-            
-            <b>Flux</b> Jugular  Dir. Tony Scott.‘15<br>
-            <b>Beyond The Door</b> Actress Dir. Peter Bradley. '15 <br>
-            <b>Step In Time</b> Dancer MGA Productions ‘12<br>
-            <b>We Will Rock You</b> Flashmob Dancer Chor. Murray Grant 2011<br>
-            <b>24hrs Live Theatre</b> Actress NTS ‘11 Chicago Principle/Dancer The Fame Academy ‘11
-        
-        <h2>Skills</h2>
-                                
-        <b>Dance</b> Jazz*, Musical Theatre*, Ballet, Commercial, Tap, Latin American, Pas De Deux.<br>
-        <b>Accents</b> Scottish (Native), General American*, RP*, Cockney, Southern American, New York American.<br>
-        <b>Vocal Range</b> F Below Middle C to Top Eb. Belt to E above Middle C. Other: Basic pointe, Violin, Clarsach, Basic keyboard skills.
-         
-    </div>
+    </header>
+
+    <!-- About -->
+    <!--<section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow zoomIn" data-wow-delay="0.5s">
+                    <h2>Actress, singer, dancer and model.</h2>
+                    <p class="lead">Eat, rehearse, perform, repeat.</p>
                 </div>
-       	    </div>
-                
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>Katrina Winters</li>
-						</ul>
-					</footer>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>-->
 
-			</div>
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Skills</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 wow bounceInUp">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-stack-2x"></i>
+                                <i class="fa fa-microphone fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    Dance
+                                </h4>
+                                <p>Jazz*, Musical Theatre*, Ballet, Commercial, Tap, Latin American, Pas
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-            <script>
-    $(window).load(function () {
-        $(".container").fadeIn(3000, function() {
-        $("body").fadeIn(3000);   
-        setTimeout(function(){
-            $(".intro-text").fadeIn(3000);
-        });    
-                
-        }, 1000);
-    })
-</script>
+De Deux.</p>
+                                <!--<a href="#" class="btn btn-light">Listen</a>-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 wow bounceInUp" data-wow-delay="0.5s">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-stack-2x"></i>
+                                <i class="fa fa-film fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    Accents
+                                </h4>
+                                <p>Scottish (Native), General American*, RP*, Cockney, Southern
 
-	</body>
+American, New York American.</p>
+                                <!--<a href="#" class="btn btn-light">Watch</a>-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 wow bounceInUp" data-wow-delay="1s">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-stack-2x"></i>
+                                <i class="fa fa-music fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    Vocal-range
+                                </h4>
+                                <p>F Below Middle C to Top Eb. Belt to E above Middle C.</p>
+                                <!--<a href="#" class="btn btn-light">Hear</a>-->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 wow bounceInUp" data-wow-delay="1.5s">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-stack-2x"></i>
+                                <i class="fa fa-camera-retro fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    Other
+                                </h4>
+                                <p>Basic pointe, Violin, Clarsach, Basic keyboard skills.</p>
+                                <!--<a href="#" class="btn btn-light">Look</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center wow fadeIn" data-wow-delay="2s"> 
+            <h1>Choose me for your next production or you get the hammer!</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="images/fulls/24.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="images/fulls/14.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="images/fulls/30.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="images/fulls/37.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a href="gallery.html" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Would you like to view content?</h3>
+                    <a href="#" class="btn btn-lg btn-light">Reels</a>
+                    <a href="#" class="btn btn-lg btn-light">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <!--<section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>-->
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Katrina Winters</strong>
+                    </h4>
+                    <p>London, Glasgow and the UK.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:katrinawinters@hotmail.co.uk">katrinawinters@hotmail.co.uk</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Katrina Winters 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/wow.js"></script>
+    
+    <!-- Custom Theme JavaScript -->
+    <script>
+    new WOW().init();
+        
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
 </html>
