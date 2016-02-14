@@ -21,7 +21,7 @@
     
     <link rel="shortcut icon" href="images/favicon.ico">
     
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
     
     <!-- Custom Fonts -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -46,39 +46,43 @@
                 <a href="#top"  class="name" onclick = $("#menu-close").click(); >Katrina Winters</a>
             </li>
             <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                <a href="index.html#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                <a href="index.html#about" onclick = $("#menu-close").click(); >About</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Talents</a>
+                <a href="index.html#services" onclick = $("#menu-close").click(); >Talents</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                <a href="gallery.html" onclick = $("#menu-close").click(); >Portfolio</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                <a href="index.html#contact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
             <li>
-                <a href="showreel.html" onclick = $("#menu-close").click(); >Showreel</a>
+                <a href="watch.html" onclick = $("#menu-close").click(); >Showreel</a>
+            </li>
+            <li>
+                <a href="voice.html" onclick = $("#menu-close").click(); >Voice</a>
             </li>
         </ul>
     </nav>
 
     <!-- Film image -->
+    <div class="film-image"></div>
     
     <img class="logo" src="images/KW-black.png"/>
     
     <!-- Header -->
-    <header id="top" class="header">
-        <div class="owl-carousel">
-    <div class="item-video" data-merge="3"><a class="owl-video" href="http://vimeo.com/23924346"></a></div>
-    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a></div>
-    <div class="item-video" data-merge="2"><a class="owl-video" href="http://www.youtube.com/watch?v=FBu_jxT1PkA"></a></div>
-</div>
+    <header id="top" class="header voice-header">
+        <div class="text-vertical-center">
+            <h1 class="name wow fadeIn" data-wow-delay="0.5s">Voice</h1>
+            <h3 class="wow fadeIn soundcloud" data-wow-delay="1s">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/katrina_winters/voice-reel&color=0066cc"></iframe>
+            </h3>
+        </div>
     </header>
-
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
@@ -86,7 +90,7 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Katrina Winters</strong>
                     </h4>
-                    <p>London and the UK.</p>
+                    <p>London, Glasgow and the UK.</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:katrinawinters@hotmail.co.uk">katrinawinters@hotmail.co.uk</a>
                         </li>
@@ -116,30 +120,11 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.js"></script>
     
     <!-- Custom Theme JavaScript -->
     <script>
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
-})  
+    new WOW().init();
         
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
