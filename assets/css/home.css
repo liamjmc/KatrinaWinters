@@ -44,7 +44,7 @@ img.logo {
 }
 
 .home-header{
-    background: url(../../images/fulls/07.jpg) #000 no-repeat center center scroll;
+    background: url(../../Images/InTheStudio/fulls/2.jpg) #000 no-repeat center center scroll;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
@@ -52,11 +52,11 @@ img.logo {
 }
 
 .watch-header{
-    background: url(../../images/fulls/02.jpg) #000 no-repeat center center scroll;
+    background: url(../../Images/InTheStudio/fulls/3.jpg #000 no-repeat center center scroll;
 }
 
 .voice-header{
-    background: url(../../images/fulls/24.jpg) #000 no-repeat bottom center scroll;
+    background: url(../../Images/InTheStudio/fulls/3.jpg) #000 no-repeat bottom center scroll;
         -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -68,7 +68,7 @@ img.logo {
 }
 
 .cv-header{
-    background: url(../../images/fulls/02.jpg) #000 no-repeat center center scroll;
+    background: url(../../Images/InTheStudio/fulls/2.jpg) #000 no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -79,7 +79,7 @@ img.logo {
     height:100vh;
     position:fixed;
     z-index:-1;
-    background: url(../../images/fulls/20.jpg) no-repeat center center scroll;
+    background: url(../../Images/BehindTheScenes/fulls/9.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
