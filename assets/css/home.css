@@ -52,7 +52,13 @@ img.logo {
 }
 
 .watch-header{
-    background: url(../../images/InTheStudio/fulls/3.jpg #000 no-repeat center center scroll;
+    background: url(../../images/InTheStudio/fulls/3.jpg) #000 no-repeat center center scroll;
+    padding-top:20vh;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.videoWrapper{
+    margin-bottom:40px;
 }
 
 .voice-header{
